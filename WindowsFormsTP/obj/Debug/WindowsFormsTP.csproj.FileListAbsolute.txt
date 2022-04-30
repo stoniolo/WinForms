@@ -3,9 +3,10 @@ C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\bin\Debug\WindowsForm
 C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\bin\Debug\WindowsFormsTP.pdb
 C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.csproj.AssemblyReference.cache
 C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.csproj.SuggestedBindingRedirects.cache
-C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.Form1.resources
 C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.Properties.Resources.resources
 C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.csproj.GenerateResource.cache
 C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.csproj.CoreCompileInputs.cache
 C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.exe
 C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.pdb
+C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.fmBusqueda.resources
+C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.mainForm.resources

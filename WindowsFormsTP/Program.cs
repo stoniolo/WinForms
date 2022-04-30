@@ -18,5 +18,6 @@ namespace WindowsFormsTP
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new mainForm());
         }
+        
     }
 }

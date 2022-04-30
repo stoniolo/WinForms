@@ -16,5 +16,31 @@ namespace WindowsFormsTP
         {
             InitializeComponent();
         }
+
+        private void tsbListar_Click(object sender, EventArgs e)
+        {
+            foreach(var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(fmBusqueda))
+                    return;
+            }
+
+            fmBusqueda fmBusqueda = new fmBusqueda();
+            fmBusqueda.MdiParent = this;
+            fmBusqueda.Show();
+        }
+
+        private void tsbBusqueda_Click(object sender, EventArgs e)
+        {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(fmBusqueda))
+                    return;
+            }
+
+            fmBusqueda fmBusqueda = new fmBusqueda();
+            fmBusqueda.MdiParent = this;
+            fmBusqueda.Show();
+        }
     }
 }

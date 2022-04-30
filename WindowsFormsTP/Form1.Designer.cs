@@ -30,12 +30,12 @@
         {
             this.menuStrip3 = new System.Windows.Forms.MenuStrip();
             this.catalogoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsbListar = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsbBusqueda = new System.Windows.Forms.ToolStripMenuItem();
             this.articulosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsbAgregar = new System.Windows.Forms.ToolStripMenuItem();
             this.tsbModificar = new System.Windows.Forms.ToolStripMenuItem();
             this.tsbEliminar = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsbListar = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsbBusqueda = new System.Windows.Forms.ToolStripMenuItem();
             this.tsbBuscar = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip3.SuspendLayout();
             this.SuspendLayout();
@@ -47,7 +47,7 @@
             this.articulosToolStripMenuItem});
             this.menuStrip3.Location = new System.Drawing.Point(0, 0);
             this.menuStrip3.Name = "menuStrip3";
-            this.menuStrip3.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip3.Size = new System.Drawing.Size(815, 24);
             this.menuStrip3.TabIndex = 2;
             this.menuStrip3.Text = "menuStrip3";
             // 
@@ -59,6 +59,20 @@
             this.catalogoToolStripMenuItem.Name = "catalogoToolStripMenuItem";
             this.catalogoToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.catalogoToolStripMenuItem.Text = "Catalogo";
+            // 
+            // tsbListar
+            // 
+            this.tsbListar.Name = "tsbListar";
+            this.tsbListar.Size = new System.Drawing.Size(180, 22);
+            this.tsbListar.Text = "Mostrar";
+            this.tsbListar.Click += new System.EventHandler(this.tsbListar_Click);
+            // 
+            // tsbBusqueda
+            // 
+            this.tsbBusqueda.Name = "tsbBusqueda";
+            this.tsbBusqueda.Size = new System.Drawing.Size(180, 22);
+            this.tsbBusqueda.Text = "Busqueda";
+            this.tsbBusqueda.Click += new System.EventHandler(this.tsbBusqueda_Click);
             // 
             // articulosToolStripMenuItem
             // 
@@ -74,46 +88,36 @@
             // tsbAgregar
             // 
             this.tsbAgregar.Name = "tsbAgregar";
-            this.tsbAgregar.Size = new System.Drawing.Size(180, 22);
+            this.tsbAgregar.Size = new System.Drawing.Size(125, 22);
             this.tsbAgregar.Text = "Agregar";
             // 
             // tsbModificar
             // 
             this.tsbModificar.Name = "tsbModificar";
-            this.tsbModificar.Size = new System.Drawing.Size(180, 22);
+            this.tsbModificar.Size = new System.Drawing.Size(125, 22);
             this.tsbModificar.Text = "Modificar";
             // 
             // tsbEliminar
             // 
             this.tsbEliminar.Name = "tsbEliminar";
-            this.tsbEliminar.Size = new System.Drawing.Size(180, 22);
+            this.tsbEliminar.Size = new System.Drawing.Size(125, 22);
             this.tsbEliminar.Text = "Eliminar";
-            // 
-            // tsbListar
-            // 
-            this.tsbListar.Name = "tsbListar";
-            this.tsbListar.Size = new System.Drawing.Size(180, 22);
-            this.tsbListar.Text = "Mostrar";
-            // 
-            // tsbBusqueda
-            // 
-            this.tsbBusqueda.Name = "tsbBusqueda";
-            this.tsbBusqueda.Size = new System.Drawing.Size(180, 22);
-            this.tsbBusqueda.Text = "Busqueda";
             // 
             // tsbBuscar
             // 
             this.tsbBuscar.Name = "tsbBuscar";
-            this.tsbBuscar.Size = new System.Drawing.Size(180, 22);
+            this.tsbBuscar.Size = new System.Drawing.Size(125, 22);
             this.tsbBuscar.Text = "Buscar";
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(815, 491);
             this.Controls.Add(this.menuStrip3);
             this.IsMdiContainer = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "mainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Catalogo";
