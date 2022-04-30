@@ -42,5 +42,18 @@ namespace WindowsFormsTP
             fmBusqueda.MdiParent = this;
             fmBusqueda.Show();
         }
+
+        private void tsbAgregar_Click(object sender, EventArgs e)
+        {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(fmAgregar))
+                    return;
+            }
+
+            fmAgregar fmAgregar = new fmAgregar();
+            fmAgregar.MdiParent = this;
+            fmAgregar.Show();
+        }
     }
 }

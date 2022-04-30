@@ -63,14 +63,14 @@
             // tsbListar
             // 
             this.tsbListar.Name = "tsbListar";
-            this.tsbListar.Size = new System.Drawing.Size(180, 22);
+            this.tsbListar.Size = new System.Drawing.Size(126, 22);
             this.tsbListar.Text = "Mostrar";
             this.tsbListar.Click += new System.EventHandler(this.tsbListar_Click);
             // 
             // tsbBusqueda
             // 
             this.tsbBusqueda.Name = "tsbBusqueda";
-            this.tsbBusqueda.Size = new System.Drawing.Size(180, 22);
+            this.tsbBusqueda.Size = new System.Drawing.Size(126, 22);
             this.tsbBusqueda.Text = "Busqueda";
             this.tsbBusqueda.Click += new System.EventHandler(this.tsbBusqueda_Click);
             // 
@@ -88,25 +88,26 @@
             // tsbAgregar
             // 
             this.tsbAgregar.Name = "tsbAgregar";
-            this.tsbAgregar.Size = new System.Drawing.Size(125, 22);
+            this.tsbAgregar.Size = new System.Drawing.Size(180, 22);
             this.tsbAgregar.Text = "Agregar";
+            this.tsbAgregar.Click += new System.EventHandler(this.tsbAgregar_Click);
             // 
             // tsbModificar
             // 
             this.tsbModificar.Name = "tsbModificar";
-            this.tsbModificar.Size = new System.Drawing.Size(125, 22);
+            this.tsbModificar.Size = new System.Drawing.Size(180, 22);
             this.tsbModificar.Text = "Modificar";
             // 
             // tsbEliminar
             // 
             this.tsbEliminar.Name = "tsbEliminar";
-            this.tsbEliminar.Size = new System.Drawing.Size(125, 22);
+            this.tsbEliminar.Size = new System.Drawing.Size(180, 22);
             this.tsbEliminar.Text = "Eliminar";
             // 
             // tsbBuscar
             // 
             this.tsbBuscar.Name = "tsbBuscar";
-            this.tsbBuscar.Size = new System.Drawing.Size(125, 22);
+            this.tsbBuscar.Size = new System.Drawing.Size(180, 22);
             this.tsbBuscar.Text = "Buscar";
             // 
             // mainForm

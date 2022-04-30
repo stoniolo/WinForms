@@ -64,7 +64,6 @@
             this.Location = new System.Drawing.Point(1, 1);
             this.Name = "fmBusqueda";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "fmBusqueda";
             ((System.ComponentModel.ISupportInitialize)(this.dgvBusqueda)).EndInit();
             this.ResumeLayout(false);
