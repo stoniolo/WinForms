@@ -26,5 +26,10 @@ namespace WindowsFormsTP
         {
             this.Close();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
