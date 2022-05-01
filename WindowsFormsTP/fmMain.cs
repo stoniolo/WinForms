@@ -52,8 +52,19 @@ namespace WindowsFormsTP
             }
 
             fmAgregar fmAgregar = new fmAgregar();
-            fmAgregar.MdiParent = this;
-            fmAgregar.Show();
+            fmAgregar.ShowDialog();
+        }
+
+        private void tsbModificar_Click(object sender, EventArgs e)
+        {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(fmModificar))
+                    return;
+            }
+
+            fmModificar fmModificar = new fmModificar();
+            fmModificar.ShowDialog();
         }
     }
 }

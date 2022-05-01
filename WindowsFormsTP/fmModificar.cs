@@ -16,5 +16,10 @@ namespace WindowsFormsTP
         {
             InitializeComponent();
         }
+
+        private void bCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

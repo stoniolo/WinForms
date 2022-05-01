@@ -181,6 +181,7 @@
             this.bCerrar.TabIndex = 18;
             this.bCerrar.Text = "Cerrar";
             this.bCerrar.UseVisualStyleBackColor = true;
+            this.bCerrar.Click += new System.EventHandler(this.bCerrar_Click);
             // 
             // bGuardarCambios
             // 
@@ -246,6 +247,7 @@
             this.Controls.Add(this.bGuardarCambios);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "fmModificar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar Articulo";
             this.ResumeLayout(false);
             this.PerformLayout();

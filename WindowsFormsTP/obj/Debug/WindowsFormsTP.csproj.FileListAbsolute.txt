@@ -11,3 +11,4 @@ C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\obj\Debug\WindowsForm
 C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.fmBusqueda.resources
 C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.mainForm.resources
 C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.fmAgregar.resources
+C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.fmModificar.resources
