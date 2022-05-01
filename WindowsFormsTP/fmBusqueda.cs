@@ -12,8 +12,10 @@ using negocio;
 
 namespace WindowsFormsTP
 {
+    
     public partial class fmBusqueda : Form
     {
+        private List<Articulo> listaArticulos;
         public fmBusqueda()
         {
             InitializeComponent();
@@ -32,7 +34,28 @@ namespace WindowsFormsTP
         private void fmBusqueda_Load(object sender, EventArgs e)
         {
             ArticuloNegocio  negocio = new ArticuloNegocio();
-            dgvBusqueda.DataSource = negocio.listar();
+            listaArticulos = negocio.listar();
+            dgvBusqueda.DataSource = listaArticulos;
+            pbArticulo.Load(listaArticulos[0].ImagenURL);
+            
+        }
+
+        private void dgvBusqueda_SelectionChanged(object sender, EventArgs e)
+        {
+            Articulo selected = (Articulo)dgvBusqueda.CurrentRow.DataBoundItem;
+            cargarImagen(selected.ImagenURL);
+        }
+        private void cargarImagen(string imagen)
+        {
+            try
+            {
+                pbArticulo.Load(imagen);
+            }
+            catch (Exception ex)
+            {
+                pbArticulo.Load("https://uning.es/wp-content/uploads/2016/08/ef3-placeholder-image.jpg");
+            }
+            
         }
     }
 }

@@ -30,22 +30,25 @@
         {
             this.dgvBusqueda = new System.Windows.Forms.DataGridView();
             this.bCerrarForm = new System.Windows.Forms.Button();
+            this.pbArticulo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBusqueda)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbArticulo)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvBusqueda
             // 
             this.dgvBusqueda.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvBusqueda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBusqueda.Location = new System.Drawing.Point(14, 12);
+            this.dgvBusqueda.Location = new System.Drawing.Point(12, 12);
             this.dgvBusqueda.Name = "dgvBusqueda";
-            this.dgvBusqueda.Size = new System.Drawing.Size(738, 360);
+            this.dgvBusqueda.Size = new System.Drawing.Size(716, 360);
             this.dgvBusqueda.TabIndex = 0;
             this.dgvBusqueda.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBusqueda_CellContentClick);
+            this.dgvBusqueda.SelectionChanged += new System.EventHandler(this.dgvBusqueda_SelectionChanged);
             // 
             // bCerrarForm
             // 
-            this.bCerrarForm.Location = new System.Drawing.Point(677, 378);
+            this.bCerrarForm.Location = new System.Drawing.Point(653, 378);
             this.bCerrarForm.Name = "bCerrarForm";
             this.bCerrarForm.Size = new System.Drawing.Size(75, 23);
             this.bCerrarForm.TabIndex = 1;
@@ -53,12 +56,22 @@
             this.bCerrarForm.UseVisualStyleBackColor = true;
             this.bCerrarForm.Click += new System.EventHandler(this.bCerrarForm_Click);
             // 
+            // pbArticulo
+            // 
+            this.pbArticulo.Location = new System.Drawing.Point(734, 127);
+            this.pbArticulo.Name = "pbArticulo";
+            this.pbArticulo.Size = new System.Drawing.Size(118, 120);
+            this.pbArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbArticulo.TabIndex = 2;
+            this.pbArticulo.TabStop = false;
+            // 
             // fmBusqueda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(764, 413);
+            this.ClientSize = new System.Drawing.Size(864, 413);
             this.ControlBox = false;
+            this.Controls.Add(this.pbArticulo);
             this.Controls.Add(this.bCerrarForm);
             this.Controls.Add(this.dgvBusqueda);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -68,6 +81,7 @@
             this.Text = "fmBusqueda";
             this.Load += new System.EventHandler(this.fmBusqueda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBusqueda)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbArticulo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -76,5 +90,6 @@
 
         private System.Windows.Forms.DataGridView dgvBusqueda;
         private System.Windows.Forms.Button bCerrarForm;
+        private System.Windows.Forms.PictureBox pbArticulo;
     }
 }

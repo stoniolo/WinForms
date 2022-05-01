@@ -45,7 +45,7 @@
             this.articulosToolStripMenuItem});
             this.menuStrip3.Location = new System.Drawing.Point(0, 0);
             this.menuStrip3.Name = "menuStrip3";
-            this.menuStrip3.Size = new System.Drawing.Size(815, 24);
+            this.menuStrip3.Size = new System.Drawing.Size(915, 24);
             this.menuStrip3.TabIndex = 2;
             this.menuStrip3.Text = "menuStrip3";
             // 
@@ -61,14 +61,14 @@
             // tsbListar
             // 
             this.tsbListar.Name = "tsbListar";
-            this.tsbListar.Size = new System.Drawing.Size(180, 22);
+            this.tsbListar.Size = new System.Drawing.Size(126, 22);
             this.tsbListar.Text = "Mostrar";
             this.tsbListar.Click += new System.EventHandler(this.tsbListar_Click);
             // 
             // tsbBusqueda
             // 
             this.tsbBusqueda.Name = "tsbBusqueda";
-            this.tsbBusqueda.Size = new System.Drawing.Size(180, 22);
+            this.tsbBusqueda.Size = new System.Drawing.Size(126, 22);
             this.tsbBusqueda.Text = "Busqueda";
             this.tsbBusqueda.Click += new System.EventHandler(this.tsbBusqueda_Click);
             // 
@@ -84,14 +84,14 @@
             // tsbAgregar
             // 
             this.tsbAgregar.Name = "tsbAgregar";
-            this.tsbAgregar.Size = new System.Drawing.Size(180, 22);
+            this.tsbAgregar.Size = new System.Drawing.Size(125, 22);
             this.tsbAgregar.Text = "Agregar";
             this.tsbAgregar.Click += new System.EventHandler(this.tsbAgregar_Click);
             // 
             // tsbModificar
             // 
             this.tsbModificar.Name = "tsbModificar";
-            this.tsbModificar.Size = new System.Drawing.Size(180, 22);
+            this.tsbModificar.Size = new System.Drawing.Size(125, 22);
             this.tsbModificar.Text = "Modificar";
             this.tsbModificar.Click += new System.EventHandler(this.tsbModificar_Click);
             // 
@@ -99,7 +99,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(815, 491);
+            this.ClientSize = new System.Drawing.Size(915, 491);
             this.Controls.Add(this.menuStrip3);
             this.IsMdiContainer = true;
             this.MaximizeBox = false;
