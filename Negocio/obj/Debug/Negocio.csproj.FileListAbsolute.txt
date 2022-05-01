@@ -1,0 +1,9 @@
+C:\Users\stoniolo\Documents\GitHub\WinForms\Negocio\bin\Debug\Negocio.dll
+C:\Users\stoniolo\Documents\GitHub\WinForms\Negocio\bin\Debug\Negocio.pdb
+C:\Users\stoniolo\Documents\GitHub\WinForms\Negocio\bin\Debug\dominio.dll
+C:\Users\stoniolo\Documents\GitHub\WinForms\Negocio\bin\Debug\dominio.pdb
+C:\Users\stoniolo\Documents\GitHub\WinForms\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\stoniolo\Documents\GitHub\WinForms\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\stoniolo\Documents\GitHub\WinForms\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\stoniolo\Documents\GitHub\WinForms\Negocio\obj\Debug\Negocio.dll
+C:\Users\stoniolo\Documents\GitHub\WinForms\Negocio\obj\Debug\Negocio.pdb

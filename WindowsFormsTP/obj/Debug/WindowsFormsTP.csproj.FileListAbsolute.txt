@@ -12,3 +12,8 @@ C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\obj\Debug\WindowsForm
 C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.mainForm.resources
 C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.fmAgregar.resources
 C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.fmModificar.resources
+C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\bin\Debug\dominio.dll
+C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\bin\Debug\dominio.pdb
+C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.csproj.CopyComplete
+C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\bin\Debug\Negocio.dll
+C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\bin\Debug\Negocio.pdb

@@ -41,6 +41,7 @@
             this.dgvBusqueda.Name = "dgvBusqueda";
             this.dgvBusqueda.Size = new System.Drawing.Size(738, 360);
             this.dgvBusqueda.TabIndex = 0;
+            this.dgvBusqueda.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBusqueda_CellContentClick);
             // 
             // bCerrarForm
             // 
@@ -65,6 +66,7 @@
             this.Name = "fmBusqueda";
             this.ShowInTaskbar = false;
             this.Text = "fmBusqueda";
+            this.Load += new System.EventHandler(this.fmBusqueda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBusqueda)).EndInit();
             this.ResumeLayout(false);
 

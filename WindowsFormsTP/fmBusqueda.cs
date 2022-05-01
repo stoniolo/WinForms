@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dominio;
+using negocio;
 
 namespace WindowsFormsTP
 {
@@ -20,6 +22,17 @@ namespace WindowsFormsTP
         private void bCerrarForm_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dgvBusqueda_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void fmBusqueda_Load(object sender, EventArgs e)
+        {
+            ArticuloNegocio  negocio = new ArticuloNegocio();
+            dgvBusqueda.DataSource = negocio.listar();
         }
     }
 }
