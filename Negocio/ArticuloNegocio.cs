@@ -20,7 +20,7 @@ namespace negocio
                 datos.setQuery("select Codigo, Nombre, Descripcion, IdMarca, IdCategoria, ImagenUrl, Precio from ARTICULOS");
                 datos.read();
 
-                while(datos.Reader.Read())
+                while (datos.Reader.Read())
                 {
                     Articulo aux = new Articulo();
                     aux.Codigo = (string)datos.Reader["Codigo"];
@@ -46,5 +46,27 @@ namespace negocio
                 datos.closeConnection();
             }
         }
+
+        public void agregar(Articulo nuevo)
+        {
+            AccesoDB datos = new AccesoDB();
+            try
+            {
+                datos.setQuery("Insert into ARTICULOS(Codigo, Nombre, IdMarca, IdCategoria, ImagenUrl, Precio, Descripcion)values('" + nuevo.Codigo + "', '" + nuevo.Nombre + "', '" + nuevo.Marca + "', '" + nuevo.Categoria + "', '" + nuevo.ImagenURL + "', '" + nuevo.Precio + "', '" + nuevo.Descripcion + "')");
+                datos.run();
+            }
+            catch ( Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.closeConnection();
+            }
+        }
+        
+
+
     }
 }

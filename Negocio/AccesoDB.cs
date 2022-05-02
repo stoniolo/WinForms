@@ -45,6 +45,22 @@ namespace negocio
             
         }
 
+        public void run()
+        {
+            command.Connection = connection;
+            try
+            {
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+
         public void closeConnection()
         {
             if(reader != null)
