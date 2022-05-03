@@ -36,6 +36,7 @@ namespace WindowsFormsTP
             ArticuloNegocio  negocio = new ArticuloNegocio();
             listaArticulos = negocio.listar();
             dgvBusqueda.DataSource = listaArticulos;
+            dgvBusqueda.Columns["ImagenURL"].Visible = false;
             pbArticulo.Load(listaArticulos[0].ImagenURL);
             
         }

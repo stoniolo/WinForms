@@ -17,7 +17,7 @@ namespace negocio
 
             try
             {
-                datos.setQuery("select Codigo, Nombre, Descripcion, IdMarca, IdCategoria, ImagenUrl, Precio from ARTICULOS");
+                datos.setQuery("select Codigo, Nombre, A.Descripcion, M.Descripcion Marca, C.Descripcion Categoria, ImagenUrl, Precio from ARTICULOS A, MARCAS M, CATEGORIAS C");
                 datos.read();
 
                 while (datos.Reader.Read())
@@ -26,8 +26,13 @@ namespace negocio
                     aux.Codigo = (string)datos.Reader["Codigo"];
                     aux.Descripcion = (string)datos.Reader["Descripcion"];
                     aux.Nombre = (string)datos.Reader["Nombre"];
-                    aux.Marca = (int)datos.Reader["IdMarca"];
-                    aux.Categoria = (int)datos.Reader["IdCategoria"];
+
+                    aux.Marca = new Marca();
+                    aux.Marca.Descripcion = (string)datos.Reader["Marca"];
+
+                    aux.Categoria = new Categoria();
+                    aux.Categoria.Descripcion = (string)datos.Reader["Categoria"];
+
                     aux.ImagenURL = (string)datos.Reader["ImagenUrl"];
                     aux.Precio = (decimal)datos.Reader["Precio"];
 
@@ -52,7 +57,14 @@ namespace negocio
             AccesoDB datos = new AccesoDB();
             try
             {
-                datos.setQuery("Insert into ARTICULOS(Codigo, Nombre, IdMarca, IdCategoria, ImagenUrl, Precio, Descripcion)values('" + nuevo.Codigo + "', '" + nuevo.Nombre + "', '" + nuevo.Marca + "', '" + nuevo.Categoria + "', '" + nuevo.ImagenURL + "', '" + nuevo.Precio + "', '" + nuevo.Descripcion + "')");
+                datos.setQuery("Insert into ARTICULOS(Codigo, Nombre, IdMarca, IdCategoria, ImagenUrl, Precio, Descripcion)values( @Codigo, @Nombre, @IdMarca, @IdCategoria, @ImagenUrl, @Precio, @Descripcion)");
+                datos.setParametros("@Codigo", nuevo.Codigo);
+                datos.setParametros("@IdMarca", nuevo.Marca.Id);
+                datos.setParametros("@IdCategoria", nuevo.Categoria.Id);
+                datos.setParametros("@ImagenUrl", nuevo.ImagenURL);
+                datos.setParametros("@Descripcion", nuevo.Descripcion);
+                datos.setParametros("@Nombre", nuevo.Nombre);
+                datos.setParametros("@Precio", nuevo.Precio);
                 datos.run();
             }
             catch ( Exception ex)

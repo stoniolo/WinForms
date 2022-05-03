@@ -60,6 +60,10 @@ namespace negocio
             }
         }
 
+        public void setParametros(string nombre, object value)
+        {
+            command.Parameters.AddWithValue(nombre, value);
+        }
 
         public void closeConnection()
         {

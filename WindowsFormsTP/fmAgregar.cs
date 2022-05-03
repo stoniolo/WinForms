@@ -28,8 +28,8 @@ namespace WindowsFormsTP
             {
                 art.Codigo = tbCodigo.Text;
                 art.Nombre = tbNombre.Text;
-                art.Categoria = int.Parse(cbCategoria.Text);
-                art.Marca = int.Parse(cbMarca.Text);
+                art.Categoria = (Categoria)cbCategoria.SelectedItem;
+                art.Marca = (Marca)cbMarca.SelectedItem;
                 art.Precio = decimal.Parse(tbPrecio.Text);
                 art.Descripcion = rtbDescripcion.Text;
                 art.ImagenURL = tbImagen.Text;
