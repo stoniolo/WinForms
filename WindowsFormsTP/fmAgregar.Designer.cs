@@ -35,8 +35,6 @@
             this.tbPrecio = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tbImagen = new System.Windows.Forms.TextBox();
-            this.tbCategoria = new System.Windows.Forms.TextBox();
-            this.tbMarca = new System.Windows.Forms.TextBox();
             this.tbNombre = new System.Windows.Forms.TextBox();
             this.tbCodigo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,6 +43,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.cbMarca = new System.Windows.Forms.ComboBox();
+            this.cbCategoria = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // bAgregarArt
@@ -106,20 +106,6 @@
             this.tbImagen.Name = "tbImagen";
             this.tbImagen.Size = new System.Drawing.Size(230, 20);
             this.tbImagen.TabIndex = 6;
-            // 
-            // tbCategoria
-            // 
-            this.tbCategoria.Location = new System.Drawing.Point(58, 213);
-            this.tbCategoria.Name = "tbCategoria";
-            this.tbCategoria.Size = new System.Drawing.Size(230, 20);
-            this.tbCategoria.TabIndex = 7;
-            // 
-            // tbMarca
-            // 
-            this.tbMarca.Location = new System.Drawing.Point(58, 172);
-            this.tbMarca.Name = "tbMarca";
-            this.tbMarca.Size = new System.Drawing.Size(230, 20);
-            this.tbMarca.TabIndex = 8;
             // 
             // tbNombre
             // 
@@ -191,11 +177,31 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "Imagen(URL):";
             // 
+            // cbMarca
+            // 
+            this.cbMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMarca.FormattingEnabled = true;
+            this.cbMarca.Location = new System.Drawing.Point(58, 173);
+            this.cbMarca.Name = "cbMarca";
+            this.cbMarca.Size = new System.Drawing.Size(230, 21);
+            this.cbMarca.TabIndex = 17;
+            // 
+            // cbCategoria
+            // 
+            this.cbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCategoria.FormattingEnabled = true;
+            this.cbCategoria.Location = new System.Drawing.Point(58, 216);
+            this.cbCategoria.Name = "cbCategoria";
+            this.cbCategoria.Size = new System.Drawing.Size(230, 21);
+            this.cbCategoria.TabIndex = 18;
+            // 
             // fmAgregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(347, 521);
+            this.Controls.Add(this.cbCategoria);
+            this.Controls.Add(this.cbMarca);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -204,8 +210,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tbCodigo);
             this.Controls.Add(this.tbNombre);
-            this.Controls.Add(this.tbMarca);
-            this.Controls.Add(this.tbCategoria);
             this.Controls.Add(this.tbImagen);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbPrecio);
@@ -218,6 +222,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Articulo";
+            this.Load += new System.EventHandler(this.fmAgregar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,8 +237,6 @@
         private System.Windows.Forms.TextBox tbPrecio;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbImagen;
-        private System.Windows.Forms.TextBox tbCategoria;
-        private System.Windows.Forms.TextBox tbMarca;
         private System.Windows.Forms.TextBox tbNombre;
         private System.Windows.Forms.TextBox tbCodigo;
         private System.Windows.Forms.Label label3;
@@ -242,5 +245,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox cbMarca;
+        private System.Windows.Forms.ComboBox cbCategoria;
     }
 }

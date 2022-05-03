@@ -28,8 +28,8 @@ namespace WindowsFormsTP
             {
                 art.Codigo = tbCodigo.Text;
                 art.Nombre = tbNombre.Text;
-                art.Categoria = int.Parse(tbCategoria.Text);
-                art.Marca = int.Parse(tbMarca.Text);
+                art.Categoria = int.Parse(cbCategoria.Text);
+                art.Marca = int.Parse(cbMarca.Text);
                 art.Precio = decimal.Parse(tbPrecio.Text);
                 art.Descripcion = rtbDescripcion.Text;
                 art.ImagenURL = tbImagen.Text;
@@ -52,6 +52,22 @@ namespace WindowsFormsTP
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void fmAgregar_Load(object sender, EventArgs e)
+        {
+            MarcaNegocio marcaNegocio = new MarcaNegocio();
+            CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
+            try
+            {
+                cbCategoria.DataSource = categoriaNegocio.listar();
+                cbMarca.DataSource = marcaNegocio.listar();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }
