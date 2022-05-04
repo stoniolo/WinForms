@@ -4,3 +4,9 @@ C:\Users\stoniolo\Documents\GitHub\WinForms\dominio\obj\Debug\dominio.csproj.Ass
 C:\Users\stoniolo\Documents\GitHub\WinForms\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
 C:\Users\stoniolo\Documents\GitHub\WinForms\dominio\obj\Debug\dominio.dll
 C:\Users\stoniolo\Documents\GitHub\WinForms\dominio\obj\Debug\dominio.pdb
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\dominio\bin\Debug\dominio.dll
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\dominio\bin\Debug\dominio.pdb
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\dominio\obj\Debug\dominio.dll
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\dominio\obj\Debug\dominio.pdb

@@ -37,10 +37,16 @@
             // 
             // dgvBusqueda
             // 
+            this.dgvBusqueda.AllowUserToAddRows = false;
+            this.dgvBusqueda.AllowUserToDeleteRows = false;
+            this.dgvBusqueda.AllowUserToResizeColumns = false;
+            this.dgvBusqueda.AllowUserToResizeRows = false;
             this.dgvBusqueda.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvBusqueda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBusqueda.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvBusqueda.Location = new System.Drawing.Point(12, 12);
             this.dgvBusqueda.Name = "dgvBusqueda";
+            this.dgvBusqueda.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBusqueda.Size = new System.Drawing.Size(716, 360);
             this.dgvBusqueda.TabIndex = 0;
             this.dgvBusqueda.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBusqueda_CellContentClick);

@@ -17,3 +17,22 @@ C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\bin\Debug\dominio.pdb
 C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.csproj.CopyComplete
 C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\bin\Debug\Negocio.dll
 C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\bin\Debug\Negocio.pdb
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\WindowsFormsTP\bin\Debug\WindowsFormsTP.exe.config
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\WindowsFormsTP\bin\Debug\WindowsFormsTP.exe
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\WindowsFormsTP\bin\Debug\WindowsFormsTP.pdb
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\WindowsFormsTP\bin\Debug\dominio.dll
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\WindowsFormsTP\bin\Debug\Negocio.dll
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\WindowsFormsTP\bin\Debug\dominio.pdb
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\WindowsFormsTP\bin\Debug\Negocio.pdb
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.csproj.AssemblyReference.cache
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.csproj.SuggestedBindingRedirects.cache
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.fmAgregar.resources
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.fmBusqueda.resources
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.mainForm.resources
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.fmModificar.resources
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.Properties.Resources.resources
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.csproj.GenerateResource.cache
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.csproj.CoreCompileInputs.cache
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.csproj.CopyComplete
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.exe
+C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.pdb
