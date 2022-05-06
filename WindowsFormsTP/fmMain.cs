@@ -65,8 +65,10 @@ namespace WindowsFormsTP
                 if (item.GetType() == typeof(fmModificar))
                     return;
             }
+            Articulo selected = new Articulo();
+            selected = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
 
-            fmModificar fmModificar = new fmModificar();
+            fmModificar fmModificar = new fmModificar(selected);
             fmModificar.ShowDialog();
         }
 
@@ -93,12 +95,17 @@ namespace WindowsFormsTP
         private void ocultarColumnas()
         {
             dgvArticulos.Columns["ImagenURL"].Visible = false;
+            dgvArticulos.Columns["Id"].Visible = false;
+            pbArticulo.Load(listaArticulos[0].ImagenURL);
         }
 
         private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
         {
-            Articulo selected = (Articulo) dgvArticulos.CurrentRow.DataBoundItem;
-            cargarImagen(selected.ImagenURL);
+            if(dgvArticulos.CurrentRow != null)
+            {
+                Articulo selected = (Articulo) dgvArticulos.CurrentRow.DataBoundItem;
+                cargarImagen(selected.ImagenURL);
+            }
         }
 
         private void cargarImagen(string imagen)
@@ -125,6 +132,11 @@ namespace WindowsFormsTP
             dgvArticulos.DataSource = null;
             dgvArticulos.DataSource = listaFiltrada;
             ocultarColumnas();
+
+        }
+
+        private void dgvArticulos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
 

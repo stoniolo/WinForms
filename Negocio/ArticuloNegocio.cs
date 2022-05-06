@@ -17,20 +17,23 @@ namespace negocio
 
             try
             {
-                datos.setQuery("select Codigo, Nombre, A.Descripcion, M.Descripcion Marca, C.Descripcion Categoria, ImagenUrl, Precio from ARTICULOS A, MARCAS M, CATEGORIAS C where M.Id = A.IdMarca And C.Id = A.IdCategoria");
+                datos.setQuery("select A.Id, Codigo, Nombre, A.Descripcion, M.Descripcion Marca, C.Descripcion Categoria, ImagenUrl, Precio, A.IdCategoria, A.IdMarca from ARTICULOS A, MARCAS M, CATEGORIAS C where M.Id = A.IdMarca And C.Id = A.IdCategoria");
                 datos.read();
 
                 while (datos.Reader.Read())
                 {
                     Articulo aux = new Articulo();
+                    aux.Id = (int)datos.Reader["Id"];
                     aux.Codigo = (string)datos.Reader["Codigo"];
                     aux.Descripcion = (string)datos.Reader["Descripcion"];
                     aux.Nombre = (string)datos.Reader["Nombre"];
 
                     aux.Marca = new Marca();
+                    aux.Marca.Id = (int)datos.Reader["IdMarca"];
                     aux.Marca.Descripcion = (string)datos.Reader["Marca"];
 
                     aux.Categoria = new Categoria();
+                    aux.Categoria.Id = (int)datos.Reader["IdCategoria"];
                     aux.Categoria.Descripcion = (string)datos.Reader["Categoria"];
 
                     aux.ImagenURL = (string)datos.Reader["ImagenUrl"];
@@ -75,6 +78,30 @@ namespace negocio
             finally
             {
                 datos.closeConnection();
+            }
+        }
+
+        public void modificar(Articulo art)
+        {
+            AccesoDB datos = new AccesoDB();
+
+            try
+            {
+                datos.setQuery("update ARTICULOS set Codigo = @Codigo, Nombre = @Nombre, Descripcion = @Descripcion, IdMarca = @IdMarca, IdCategoria = @IdCategoria, ImagenUrl = @ImagenUrl, Precio = @Precio where Id = @Id");
+                datos.setParametros("@Codigo", art.Codigo);
+                datos.setParametros("@Nombre", art.Nombre);
+                datos.setParametros("@Descripcion", art.Descripcion);
+                datos.setParametros("@IdMarca", art.Marca.Id);
+                datos.setParametros("@IdCategoria", art.Categoria.Id);
+                datos.setParametros("@ImagenUrl", art.ImagenURL);
+                datos.setParametros("@Precio", art.Precio);
+                datos.setParametros("@Id", art.Id);
+                datos.run();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
             }
         }
 
