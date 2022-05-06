@@ -72,16 +72,13 @@ namespace WindowsFormsTP
 
         private void mainForm_Load(object sender, EventArgs e)
         {
-            /*foreach (var item in Application.OpenForms)
-            {
-                if (item.GetType() == typeof(fmBusqueda))
-                    return;
-            }
-
-            fmBusqueda fmBusqueda = new fmBusqueda();
-            fmBusqueda.MdiParent = this;
-            fmBusqueda.Show();*/
             cargar();
+            cboCampo.Items.Add("Código");
+            cboCampo.Items.Add("Descripción");
+            cboCampo.Items.Add("Nombre");
+            cboCampo.Items.Add("Marca");
+            cboCampo.Items.Add("Categoría");
+            cboCampo.Items.Add("Precio");
         }
 
         private void cargar()
@@ -129,6 +126,25 @@ namespace WindowsFormsTP
             dgvArticulos.DataSource = listaFiltrada;
             ocultarColumnas();
 
+        }
+
+        private void cboCampo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string opcion = cboCampo.SelectedItem.ToString();
+            if(opcion == "Precio")
+            {
+                cboCriterio.Items.Clear();
+                cboCriterio.Items.Add("Mayor a");
+                cboCriterio.Items.Add("Menor a");
+                cboCriterio.Items.Add("Igual a");
+            }
+            else
+            {
+                cboCriterio.Items.Clear();
+                cboCriterio.Items.Add("Comienza con");
+                cboCriterio.Items.Add("Termina con");
+                cboCriterio.Items.Add("Contiene");
+            }
         }
     }
 }
