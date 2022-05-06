@@ -34,6 +34,8 @@
             this.tsbAgregar = new System.Windows.Forms.ToolStripMenuItem();
             this.tsbModificar = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip3 = new System.Windows.Forms.MenuStrip();
+            this.lblFiltroRapido = new System.Windows.Forms.Label();
+            this.txtFiltroRapido = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbArticulo)).BeginInit();
             this.menuStrip3.SuspendLayout();
@@ -47,7 +49,7 @@
             this.dgvArticulos.AllowUserToResizeRows = false;
             this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvArticulos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvArticulos.Location = new System.Drawing.Point(39, 53);
+            this.dgvArticulos.Location = new System.Drawing.Point(31, 77);
             this.dgvArticulos.MultiSelect = false;
             this.dgvArticulos.Name = "dgvArticulos";
             this.dgvArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -57,7 +59,7 @@
             // 
             // pbArticulo
             // 
-            this.pbArticulo.Location = new System.Drawing.Point(733, 172);
+            this.pbArticulo.Location = new System.Drawing.Point(725, 196);
             this.pbArticulo.Name = "pbArticulo";
             this.pbArticulo.Size = new System.Drawing.Size(163, 172);
             this.pbArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -97,11 +99,30 @@
             this.menuStrip3.TabIndex = 2;
             this.menuStrip3.Text = "menuStrip3";
             // 
+            // lblFiltroRapido
+            // 
+            this.lblFiltroRapido.AutoSize = true;
+            this.lblFiltroRapido.Location = new System.Drawing.Point(32, 47);
+            this.lblFiltroRapido.Name = "lblFiltroRapido";
+            this.lblFiltroRapido.Size = new System.Drawing.Size(64, 13);
+            this.lblFiltroRapido.TabIndex = 7;
+            this.lblFiltroRapido.Text = "Filtro rápido:";
+            // 
+            // txtFiltroRapido
+            // 
+            this.txtFiltroRapido.Location = new System.Drawing.Point(102, 44);
+            this.txtFiltroRapido.Name = "txtFiltroRapido";
+            this.txtFiltroRapido.Size = new System.Drawing.Size(100, 20);
+            this.txtFiltroRapido.TabIndex = 8;
+            this.txtFiltroRapido.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtFiltroRapido_KeyUp);
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(915, 491);
+            this.Controls.Add(this.txtFiltroRapido);
+            this.Controls.Add(this.lblFiltroRapido);
             this.Controls.Add(this.pbArticulo);
             this.Controls.Add(this.dgvArticulos);
             this.Controls.Add(this.menuStrip3);
@@ -128,6 +149,8 @@
         private System.Windows.Forms.ToolStripMenuItem tsbAgregar;
         private System.Windows.Forms.ToolStripMenuItem tsbModificar;
         private System.Windows.Forms.MenuStrip menuStrip3;
+        private System.Windows.Forms.Label lblFiltroRapido;
+        private System.Windows.Forms.TextBox txtFiltroRapido;
     }
 }
 

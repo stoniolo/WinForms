@@ -89,8 +89,13 @@ namespace WindowsFormsTP
             ArticuloNegocio negocio = new ArticuloNegocio();
             listaArticulos = negocio.listar();
             dgvArticulos.DataSource = listaArticulos;
-            dgvArticulos.Columns["ImagenURL"].Visible = false;
+            ocultarColumnas();
             pbArticulo.Load(listaArticulos[0].ImagenURL);
+        }
+
+        private void ocultarColumnas()
+        {
+            dgvArticulos.Columns["ImagenURL"].Visible = false;
         }
 
         private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
@@ -109,6 +114,20 @@ namespace WindowsFormsTP
             {
                 pbArticulo.Load("https://uning.es/wp-content/uploads/2016/08/ef3-placeholder-image.jpg");
             }
+
+        }
+
+        private void txtFiltroRapido_KeyUp(object sender, KeyEventArgs e)
+        {
+            List<Articulo> listaFiltrada;
+            string filtro = txtFiltroRapido.Text;
+
+            if (filtro.Length >= 2) listaFiltrada = listaArticulos.FindAll(articulo => articulo.Nombre.ToUpper().Contains(filtro.ToUpper()));
+            else listaFiltrada = listaArticulos;
+
+            dgvArticulos.DataSource = null;
+            dgvArticulos.DataSource = listaFiltrada;
+            ocultarColumnas();
 
         }
     }
