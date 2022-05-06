@@ -65,8 +65,10 @@ namespace WindowsFormsTP
                 if (item.GetType() == typeof(fmModificar))
                     return;
             }
+            Articulo selected = new Articulo();
+            selected = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
 
-            fmModificar fmModificar = new fmModificar();
+            fmModificar fmModificar = new fmModificar(selected);
             fmModificar.ShowDialog();
         }
 
@@ -90,6 +92,7 @@ namespace WindowsFormsTP
             listaArticulos = negocio.listar();
             dgvArticulos.DataSource = listaArticulos;
             dgvArticulos.Columns["ImagenURL"].Visible = false;
+            dgvArticulos.Columns["Id"].Visible = false;
             pbArticulo.Load(listaArticulos[0].ImagenURL);
         }
 
@@ -109,6 +112,11 @@ namespace WindowsFormsTP
             {
                 pbArticulo.Load("https://uning.es/wp-content/uploads/2016/08/ef3-placeholder-image.jpg");
             }
+
+        }
+
+        private void dgvArticulos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }
