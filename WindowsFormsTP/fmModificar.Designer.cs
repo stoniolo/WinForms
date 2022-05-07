@@ -196,6 +196,7 @@
             this.bEliminarArticulo.TabIndex = 8;
             this.bEliminarArticulo.Text = "Eliminar Articulo";
             this.bEliminarArticulo.UseVisualStyleBackColor = true;
+            this.bEliminarArticulo.Click += new System.EventHandler(this.bEliminarArticulo_Click);
             // 
             // cbMarca
             // 

@@ -195,6 +195,24 @@ namespace negocio
 
                 throw ex;
             }
+
+        }
+
+        public void eliminar(int id)
+        {
+            try
+            {
+                AccesoDB datos = new AccesoDB();
+                datos.setQuery("delete from ARTICULOS where id = @id");
+                datos.setParametros("id", id);
+                datos.run();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
     }
 }

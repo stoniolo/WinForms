@@ -199,6 +199,7 @@ namespace WindowsFormsTP
 
             fmAgregar fmAgregar = new fmAgregar();
             fmAgregar.ShowDialog();
+            cargar();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -213,6 +214,7 @@ namespace WindowsFormsTP
 
             fmModificar fmModificar = new fmModificar(selected);
             fmModificar.ShowDialog();
+            cargar();
         }
 
         private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -225,6 +227,7 @@ namespace WindowsFormsTP
 
             fmAgregar fmAgregar = new fmAgregar();
             fmAgregar.ShowDialog();
+            cargar();
         }
     }
 }
