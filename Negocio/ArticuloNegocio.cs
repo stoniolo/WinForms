@@ -25,8 +25,8 @@ namespace negocio
                     Articulo aux = new Articulo();
                     aux.Id = (int)datos.Reader["Id"];
                     aux.Codigo = (string)datos.Reader["Codigo"];
-                    aux.Descripcion = (string)datos.Reader["Descripcion"];
                     aux.Nombre = (string)datos.Reader["Nombre"];
+                    aux.Descripcion = (string)datos.Reader["Descripcion"];
 
                     aux.Marca = new Marca();
                     aux.Marca.Id = (int)datos.Reader["IdMarca"];

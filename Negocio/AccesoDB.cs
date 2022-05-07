@@ -20,7 +20,7 @@ namespace negocio
 
         public AccesoDB()
         {
-            connection = new SqlConnection("server=.\\SQLEXPRESS; database=CATALOGO_DB; integrated security=true");
+            connection = new SqlConnection("server=.\\; database=CATALOGO_DB; integrated security=true");
             command = new SqlCommand();
         }
         public void setQuery(string query)
