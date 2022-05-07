@@ -109,21 +109,21 @@
             this.tbCodigo.Location = new System.Drawing.Point(49, 52);
             this.tbCodigo.Name = "tbCodigo";
             this.tbCodigo.Size = new System.Drawing.Size(230, 20);
-            this.tbCodigo.TabIndex = 27;
+            this.tbCodigo.TabIndex = 0;
             // 
             // tbNombre
             // 
             this.tbNombre.Location = new System.Drawing.Point(49, 97);
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(230, 20);
-            this.tbNombre.TabIndex = 26;
+            this.tbNombre.TabIndex = 1;
             // 
             // tbImagen
             // 
             this.tbImagen.Location = new System.Drawing.Point(49, 227);
             this.tbImagen.Name = "tbImagen";
             this.tbImagen.Size = new System.Drawing.Size(230, 20);
-            this.tbImagen.TabIndex = 23;
+            this.tbImagen.TabIndex = 4;
             // 
             // label2
             // 
@@ -139,7 +139,7 @@
             this.tbPrecio.Location = new System.Drawing.Point(49, 269);
             this.tbPrecio.Name = "tbPrecio";
             this.tbPrecio.Size = new System.Drawing.Size(230, 20);
-            this.tbPrecio.TabIndex = 21;
+            this.tbPrecio.TabIndex = 5;
             // 
             // label1
             // 
@@ -155,15 +155,15 @@
             this.rtbDescripcion.Location = new System.Drawing.Point(49, 308);
             this.rtbDescripcion.Name = "rtbDescripcion";
             this.rtbDescripcion.Size = new System.Drawing.Size(230, 96);
-            this.rtbDescripcion.TabIndex = 19;
+            this.rtbDescripcion.TabIndex = 6;
             this.rtbDescripcion.Text = "";
             // 
             // bCerrar
             // 
-            this.bCerrar.Location = new System.Drawing.Point(49, 460);
+            this.bCerrar.Location = new System.Drawing.Point(177, 471);
             this.bCerrar.Name = "bCerrar";
             this.bCerrar.Size = new System.Drawing.Size(102, 35);
-            this.bCerrar.TabIndex = 18;
+            this.bCerrar.TabIndex = 9;
             this.bCerrar.Text = "Cerrar";
             this.bCerrar.UseVisualStyleBackColor = true;
             this.bCerrar.Click += new System.EventHandler(this.bCerrar_Click);
@@ -173,7 +173,7 @@
             this.bGuardarCambios.Location = new System.Drawing.Point(49, 419);
             this.bGuardarCambios.Name = "bGuardarCambios";
             this.bGuardarCambios.Size = new System.Drawing.Size(230, 35);
-            this.bGuardarCambios.TabIndex = 17;
+            this.bGuardarCambios.TabIndex = 7;
             this.bGuardarCambios.Text = "Guardar Cambios";
             this.bGuardarCambios.UseVisualStyleBackColor = true;
             this.bGuardarCambios.Click += new System.EventHandler(this.bGuardarCambios_Click);
@@ -190,10 +190,10 @@
             // 
             // bEliminarArticulo
             // 
-            this.bEliminarArticulo.Location = new System.Drawing.Point(177, 460);
+            this.bEliminarArticulo.Location = new System.Drawing.Point(49, 471);
             this.bEliminarArticulo.Name = "bEliminarArticulo";
             this.bEliminarArticulo.Size = new System.Drawing.Size(102, 35);
-            this.bEliminarArticulo.TabIndex = 36;
+            this.bEliminarArticulo.TabIndex = 8;
             this.bEliminarArticulo.Text = "Eliminar Articulo";
             this.bEliminarArticulo.UseVisualStyleBackColor = true;
             // 
@@ -204,7 +204,7 @@
             this.cbMarca.Location = new System.Drawing.Point(49, 141);
             this.cbMarca.Name = "cbMarca";
             this.cbMarca.Size = new System.Drawing.Size(230, 21);
-            this.cbMarca.TabIndex = 37;
+            this.cbMarca.TabIndex = 2;
             // 
             // cbCategoria
             // 
@@ -213,7 +213,7 @@
             this.cbCategoria.Location = new System.Drawing.Point(49, 187);
             this.cbCategoria.Name = "cbCategoria";
             this.cbCategoria.Size = new System.Drawing.Size(230, 21);
-            this.cbCategoria.TabIndex = 38;
+            this.cbCategoria.TabIndex = 3;
             // 
             // fmModificar
             // 
