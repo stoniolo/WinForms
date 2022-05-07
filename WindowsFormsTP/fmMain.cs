@@ -162,17 +162,20 @@ namespace WindowsFormsTP
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio ();
-            try
+            if (cboCampo.SelectedItem != null && cboCriterio.SelectedItem != null)
             {
-                string campo = cboCampo.SelectedItem.ToString();
-                string criterio = cboCriterio.SelectedItem.ToString();
-                string filtro = txtFiltro.Text;
-                dgvArticulos.DataSource = negocio.filtrar(campo, criterio, filtro);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
+                try
+                {
+                    string campo = cboCampo.SelectedItem.ToString();
+                    string criterio = cboCriterio.SelectedItem.ToString();
+                    string filtro = txtFiltro.Text;
+                    dgvArticulos.DataSource = negocio.filtrar(campo, criterio, filtro);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+        }
         }
 
         private void bLimpiarFiltros_Click(object sender, EventArgs e)
