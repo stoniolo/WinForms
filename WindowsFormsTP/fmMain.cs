@@ -174,5 +174,48 @@ namespace WindowsFormsTP
                 MessageBox.Show(ex.ToString());
             }
         }
+
+        private void bLimpiarFiltros_Click(object sender, EventArgs e)
+        {
+            cargar();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(fmAgregar))
+                    return;
+            }
+
+            fmAgregar fmAgregar = new fmAgregar();
+            fmAgregar.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(fmModificar))
+                    return;
+            }
+            Articulo selected = new Articulo();
+            selected = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+
+            fmModificar fmModificar = new fmModificar(selected);
+            fmModificar.ShowDialog();
+        }
+
+        private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(fmAgregar))
+                    return;
+            }
+
+            fmAgregar fmAgregar = new fmAgregar();
+            fmAgregar.ShowDialog();
+        }
     }
 }
