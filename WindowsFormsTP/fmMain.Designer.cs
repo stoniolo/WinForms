@@ -227,6 +227,7 @@
             this.Controls.Add(this.pbArticulo);
             this.Controls.Add(this.dgvArticulos);
             this.Controls.Add(this.menuStrip3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IsMdiContainer = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

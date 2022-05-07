@@ -142,20 +142,22 @@ namespace WindowsFormsTP
 
         private void cboCampo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string opcion = cboCampo.SelectedItem.ToString();
-            if(opcion == "Precio")
+            cboCriterio.Items.Clear();
+            if(cboCampo.SelectedItem != null)
             {
-                cboCriterio.Items.Clear();
-                cboCriterio.Items.Add("Mayor a");
-                cboCriterio.Items.Add("Menor a");
-                cboCriterio.Items.Add("Igual a");
-            }
-            else
-            {
-                cboCriterio.Items.Clear();
-                cboCriterio.Items.Add("Comienza con");
-                cboCriterio.Items.Add("Termina con");
-                cboCriterio.Items.Add("Contiene");
+                string opcion = cboCampo.SelectedItem.ToString();
+                if(opcion == "Precio")
+                {
+                    cboCriterio.Items.Add("Mayor a");
+                    cboCriterio.Items.Add("Menor a");
+                    cboCriterio.Items.Add("Igual a");
+                }
+                else
+                {
+                    cboCriterio.Items.Add("Comienza con");
+                    cboCriterio.Items.Add("Termina con");
+                    cboCriterio.Items.Add("Contiene");
+                }
             }
         }
 
@@ -180,6 +182,10 @@ namespace WindowsFormsTP
 
         private void bLimpiarFiltros_Click(object sender, EventArgs e)
         {
+            txtFiltroRapido.Text = "";
+            txtFiltro.Text = "";
+            cboCriterio.SelectedIndex = -1;
+            cboCampo.SelectedIndex = -1;
             cargar();
         }
 
