@@ -20,32 +20,6 @@ namespace WindowsFormsTP
             InitializeComponent();
         }
 
-        private void tsbListar_Click(object sender, EventArgs e)
-        {
-            foreach(var item in Application.OpenForms)
-            {
-                if (item.GetType() == typeof(fmBusqueda))
-                    return;
-            }
-
-            fmBusqueda fmBusqueda = new fmBusqueda();
-            fmBusqueda.MdiParent = this;
-            fmBusqueda.Show();
-        }
-
-        private void tsbBusqueda_Click(object sender, EventArgs e)
-        {
-            foreach (var item in Application.OpenForms)
-            {
-                if (item.GetType() == typeof(fmBusqueda))
-                    return;
-            }
-
-            fmBusqueda fmBusqueda = new fmBusqueda();
-            fmBusqueda.MdiParent = this;
-            fmBusqueda.Show();
-        }
-
         private void tsbAgregar_Click(object sender, EventArgs e)
         {
             foreach (var item in Application.OpenForms)
@@ -114,7 +88,7 @@ namespace WindowsFormsTP
             {
                 pbArticulo.Load(imagen);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 pbArticulo.Load("https://uning.es/wp-content/uploads/2016/08/ef3-placeholder-image.jpg");
             }
@@ -135,10 +109,6 @@ namespace WindowsFormsTP
 
         }
 
-        private void dgvArticulos_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void cboCampo_SelectedIndexChanged(object sender, EventArgs e)
         {

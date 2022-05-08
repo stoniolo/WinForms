@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="fmBusqueda.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fmBusqueda.Designer.cs">
-      <DependentUpon>fmBusqueda.cs</DependentUpon>
-    </Compile>
     <Compile Include="fmDetalles.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,9 +74,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fmAgregar.resx">
       <DependentUpon>fmAgregar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fmBusqueda.resx">
-      <DependentUpon>fmBusqueda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fmDetalles.resx">
       <DependentUpon>fmDetalles.cs</DependentUpon>
