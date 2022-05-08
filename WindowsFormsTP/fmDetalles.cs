@@ -25,13 +25,13 @@ namespace WindowsFormsTP
 
         private void fmDetalles_Load(object sender, EventArgs e)
         {
-            lCodigo.Text = "Codigo de articulo: " + art.Codigo;
+            lCodigo.Text += art.Codigo;
             lNombre.Text = art.Nombre;
-            lId.Text = "Id del articulo: " + art.Id;
-            lCategoria.Text = "Categoria: " + art.Categoria.Descripcion;
-            lMarca.Text = "Marca: " + art.Marca.Descripcion;
-            lPrecio.Text = art.Precio.ToString();
-            lDescripcion.Text = "Descripcion: " + art.Descripcion;
+            lId.Text += + art.Id;
+            lCategoria.Text += art.Categoria.Descripcion;
+            lMarca.Text += art.Marca.Descripcion;
+            lPrecio.Text = "$" + art.Precio.ToString();
+            lDescripcion.Text +=  art.Descripcion;
 
             string imagen = art.ImagenURL;
             try
@@ -49,14 +49,5 @@ namespace WindowsFormsTP
             Close();
         }
 
-        private void lNombre_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lPrecio_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

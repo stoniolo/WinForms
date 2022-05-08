@@ -56,28 +56,27 @@
             this.lNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.lNombre.Location = new System.Drawing.Point(210, 9);
             this.lNombre.Name = "lNombre";
-            this.lNombre.Size = new System.Drawing.Size(50, 16);
+            this.lNombre.Size = new System.Drawing.Size(62, 16);
             this.lNombre.TabIndex = 1;
-            this.lNombre.Text = "label1";
-            this.lNombre.Click += new System.EventHandler(this.lNombre_Click);
+            this.lNombre.Text = "Nombre";
             // 
             // lCodigo
             // 
             this.lCodigo.AutoSize = true;
             this.lCodigo.Location = new System.Drawing.Point(27, 108);
             this.lCodigo.Name = "lCodigo";
-            this.lCodigo.Size = new System.Drawing.Size(35, 13);
+            this.lCodigo.Size = new System.Drawing.Size(46, 13);
             this.lCodigo.TabIndex = 2;
-            this.lCodigo.Text = "label1";
+            this.lCodigo.Text = "Código: ";
             // 
             // lId
             // 
             this.lId.AutoSize = true;
             this.lId.Location = new System.Drawing.Point(27, 69);
             this.lId.Name = "lId";
-            this.lId.Size = new System.Drawing.Size(35, 13);
+            this.lId.Size = new System.Drawing.Size(24, 13);
             this.lId.TabIndex = 3;
-            this.lId.Text = "label1";
+            this.lId.Text = "ID: ";
             // 
             // pbArticulo
             // 
@@ -93,37 +92,36 @@
             this.lCategoria.AutoSize = true;
             this.lCategoria.Location = new System.Drawing.Point(27, 151);
             this.lCategoria.Name = "lCategoria";
-            this.lCategoria.Size = new System.Drawing.Size(35, 13);
+            this.lCategoria.Size = new System.Drawing.Size(60, 13);
             this.lCategoria.TabIndex = 5;
-            this.lCategoria.Text = "label1";
+            this.lCategoria.Text = "Categoría: ";
             // 
             // lMarca
             // 
             this.lMarca.AutoSize = true;
             this.lMarca.Location = new System.Drawing.Point(27, 198);
             this.lMarca.Name = "lMarca";
-            this.lMarca.Size = new System.Drawing.Size(35, 13);
+            this.lMarca.Size = new System.Drawing.Size(43, 13);
             this.lMarca.TabIndex = 6;
-            this.lMarca.Text = "label2";
+            this.lMarca.Text = "Marca: ";
             // 
             // lDescripcion
             // 
             this.lDescripcion.AutoSize = true;
             this.lDescripcion.Location = new System.Drawing.Point(27, 293);
             this.lDescripcion.Name = "lDescripcion";
-            this.lDescripcion.Size = new System.Drawing.Size(35, 13);
+            this.lDescripcion.Size = new System.Drawing.Size(69, 13);
             this.lDescripcion.TabIndex = 7;
-            this.lDescripcion.Text = "label3";
+            this.lDescripcion.Text = "Descripción: ";
             // 
             // lPrecio
             // 
             this.lPrecio.AutoSize = true;
             this.lPrecio.Location = new System.Drawing.Point(371, 238);
             this.lPrecio.Name = "lPrecio";
-            this.lPrecio.Size = new System.Drawing.Size(35, 13);
+            this.lPrecio.Size = new System.Drawing.Size(37, 13);
             this.lPrecio.TabIndex = 8;
-            this.lPrecio.Text = "label4";
-            this.lPrecio.Click += new System.EventHandler(this.lPrecio_Click);
+            this.lPrecio.Text = "Precio";
             // 
             // fmDetalles
             // 

@@ -176,9 +176,9 @@
             this.label1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label1.Location = new System.Drawing.Point(28, 83);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 13);
+            this.label1.Size = new System.Drawing.Size(80, 13);
             this.label1.TabIndex = 18;
-            this.label1.Text = "Fitro Avanzado:";
+            this.label1.Text = "Fitro avanzado:";
             // 
             // button1
             // 
