@@ -229,5 +229,18 @@ namespace WindowsFormsTP
             fmAgregar.ShowDialog();
             cargar();
         }
+
+        private void bDetalle_Click(object sender, EventArgs e)
+        {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(fmDetalles))
+                    return;
+            }
+
+            fmDetalles fmDetalles = new fmDetalles((Articulo)dgvArticulos.CurrentRow.DataBoundItem);
+            fmDetalles.ShowDialog();
+            cargar();
+        }
     }
 }

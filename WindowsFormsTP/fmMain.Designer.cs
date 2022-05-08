@@ -44,6 +44,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip3 = new System.Windows.Forms.MenuStrip();
             this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bDetalle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbArticulo)).BeginInit();
             this.menuStrip3.SuspendLayout();
@@ -207,11 +208,22 @@
             this.agregarToolStripMenuItem.Text = "Nuevo Articulo";
             this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
             // 
+            // bDetalle
+            // 
+            this.bDetalle.Location = new System.Drawing.Point(818, 168);
+            this.bDetalle.Name = "bDetalle";
+            this.bDetalle.Size = new System.Drawing.Size(163, 23);
+            this.bDetalle.TabIndex = 21;
+            this.bDetalle.Text = "Ver detalles";
+            this.bDetalle.UseVisualStyleBackColor = true;
+            this.bDetalle.Click += new System.EventHandler(this.bDetalle_Click);
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(994, 561);
+            this.Controls.Add(this.bDetalle);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bLimpiarFiltros);
@@ -261,6 +273,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.MenuStrip menuStrip3;
         private System.Windows.Forms.ToolStripMenuItem agregarToolStripMenuItem;
+        private System.Windows.Forms.Button bDetalle;
     }
 }
 

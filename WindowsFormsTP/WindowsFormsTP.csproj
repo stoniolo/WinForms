@@ -52,6 +52,12 @@
     <Compile Include="fmBusqueda.Designer.cs">
       <DependentUpon>fmBusqueda.cs</DependentUpon>
     </Compile>
+    <Compile Include="fmDetalles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmDetalles.Designer.cs">
+      <DependentUpon>fmDetalles.cs</DependentUpon>
+    </Compile>
     <Compile Include="fmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fmBusqueda.resx">
       <DependentUpon>fmBusqueda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmDetalles.resx">
+      <DependentUpon>fmDetalles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fmMain.resx">
       <DependentUpon>fmMain.cs</DependentUpon>

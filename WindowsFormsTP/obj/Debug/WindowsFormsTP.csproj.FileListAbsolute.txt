@@ -36,3 +36,4 @@ C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\W
 C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.csproj.CopyComplete
 C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.exe
 C:\Users\El Retardeo\Documents\Programación\Materias\3° Cuatri\Programacion3\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.pdb
+C:\Users\stoniolo\Documents\GitHub\WinForms\WindowsFormsTP\obj\Debug\WindowsFormsTP.fmDetalles.resources
