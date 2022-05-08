@@ -129,7 +129,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(120, 9);
+            this.label3.Location = new System.Drawing.Point(235, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 17);
             this.label3.TabIndex = 11;
@@ -176,9 +176,9 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(58, 243);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(73, 13);
+            this.label8.Size = new System.Drawing.Size(45, 13);
             this.label8.TabIndex = 16;
-            this.label8.Text = "Imagen(URL):";
+            this.label8.Text = "Imagen:";
             // 
             // cbMarca
             // 

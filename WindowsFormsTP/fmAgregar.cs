@@ -111,7 +111,7 @@ namespace WindowsFormsTP
             {
                 cargarImagen(archivo.FileName);
                 DateTime date = DateTime.Now;
-                direccionCopia = ConfigurationManager.AppSettings["images-folder"] + date.ToString("dd-MM-yy-HH-mm-") + archivo.SafeFileName;
+                direccionCopia = ConfigurationManager.AppSettings["images-folder"] + date.ToString("dd-MM-yy-HH-mm-ss-") + archivo.SafeFileName;
                 tbImagen.Text = direccionCopia;
             }
         }

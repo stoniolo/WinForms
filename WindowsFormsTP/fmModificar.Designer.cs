@@ -46,6 +46,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.cbMarca = new System.Windows.Forms.ComboBox();
             this.cbCategoria = new System.Windows.Forms.ComboBox();
+            this.btnModificarImagen = new System.Windows.Forms.Button();
+            this.pbxModificarArticulo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxModificarArticulo)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -53,9 +56,9 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(49, 211);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(73, 13);
+            this.label8.Size = new System.Drawing.Size(45, 13);
             this.label8.TabIndex = 33;
-            this.label8.Text = "Imagen(URL):";
+            this.label8.Text = "Imagen:";
             // 
             // label7
             // 
@@ -119,10 +122,11 @@
             // 
             // tbImagen
             // 
-            this.tbImagen.Location = new System.Drawing.Point(49, 227);
+            this.tbImagen.Location = new System.Drawing.Point(49, 228);
             this.tbImagen.Name = "tbImagen";
             this.tbImagen.Size = new System.Drawing.Size(230, 20);
             this.tbImagen.TabIndex = 4;
+            this.tbImagen.Leave += new System.EventHandler(this.tbImagen_Leave);
             // 
             // label2
             // 
@@ -181,7 +185,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(97, 9);
+            this.label9.Location = new System.Drawing.Point(225, 9);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(134, 17);
             this.label9.TabIndex = 34;
@@ -205,11 +209,32 @@
             this.cbCategoria.Size = new System.Drawing.Size(230, 21);
             this.cbCategoria.TabIndex = 3;
             // 
+            // btnModificarImagen
+            // 
+            this.btnModificarImagen.Location = new System.Drawing.Point(285, 227);
+            this.btnModificarImagen.Name = "btnModificarImagen";
+            this.btnModificarImagen.Size = new System.Drawing.Size(34, 23);
+            this.btnModificarImagen.TabIndex = 35;
+            this.btnModificarImagen.Text = "+";
+            this.btnModificarImagen.UseVisualStyleBackColor = true;
+            this.btnModificarImagen.Click += new System.EventHandler(this.btnModificarImagen_Click);
+            // 
+            // pbxModificarArticulo
+            // 
+            this.pbxModificarArticulo.Location = new System.Drawing.Point(342, 141);
+            this.pbxModificarArticulo.Name = "pbxModificarArticulo";
+            this.pbxModificarArticulo.Size = new System.Drawing.Size(212, 194);
+            this.pbxModificarArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxModificarArticulo.TabIndex = 36;
+            this.pbxModificarArticulo.TabStop = false;
+            // 
             // fmModificar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(347, 518);
+            this.ClientSize = new System.Drawing.Size(584, 521);
+            this.Controls.Add(this.pbxModificarArticulo);
+            this.Controls.Add(this.btnModificarImagen);
             this.Controls.Add(this.cbCategoria);
             this.Controls.Add(this.cbMarca);
             this.Controls.Add(this.label9);
@@ -233,6 +258,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar Articulo";
             this.Load += new System.EventHandler(this.fmModificar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxModificarArticulo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,5 +284,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cbMarca;
         private System.Windows.Forms.ComboBox cbCategoria;
+        private System.Windows.Forms.Button btnModificarImagen;
+        private System.Windows.Forms.PictureBox pbxModificarArticulo;
     }
 }
