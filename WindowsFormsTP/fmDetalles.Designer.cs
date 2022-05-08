@@ -137,6 +137,9 @@
             this.Controls.Add(this.lCodigo);
             this.Controls.Add(this.lNombre);
             this.Controls.Add(this.bCerrar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "fmDetalles";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fmDetalles";

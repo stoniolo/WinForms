@@ -45,11 +45,14 @@
             this.label8 = new System.Windows.Forms.Label();
             this.cbMarca = new System.Windows.Forms.ComboBox();
             this.cbCategoria = new System.Windows.Forms.ComboBox();
+            this.pbxAgregarArticulo = new System.Windows.Forms.PictureBox();
+            this.btnAgregarImagen = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxAgregarArticulo)).BeginInit();
             this.SuspendLayout();
             // 
             // bAgregarArt
             // 
-            this.bAgregarArt.Location = new System.Drawing.Point(33, 451);
+            this.bAgregarArt.Location = new System.Drawing.Point(132, 451);
             this.bAgregarArt.Name = "bAgregarArt";
             this.bAgregarArt.Size = new System.Drawing.Size(102, 35);
             this.bAgregarArt.TabIndex = 7;
@@ -59,7 +62,7 @@
             // 
             // bCerrarAgregar
             // 
-            this.bCerrarAgregar.Location = new System.Drawing.Point(211, 451);
+            this.bCerrarAgregar.Location = new System.Drawing.Point(393, 451);
             this.bCerrarAgregar.Name = "bCerrarAgregar";
             this.bCerrarAgregar.Size = new System.Drawing.Size(102, 35);
             this.bCerrarAgregar.TabIndex = 8;
@@ -106,6 +109,7 @@
             this.tbImagen.Name = "tbImagen";
             this.tbImagen.Size = new System.Drawing.Size(230, 20);
             this.tbImagen.TabIndex = 4;
+            this.tbImagen.Leave += new System.EventHandler(this.tbImagen_Leave);
             // 
             // tbNombre
             // 
@@ -148,7 +152,6 @@
             this.label5.Size = new System.Drawing.Size(47, 13);
             this.label5.TabIndex = 13;
             this.label5.Text = "Nombre:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -195,11 +198,32 @@
             this.cbCategoria.Size = new System.Drawing.Size(230, 21);
             this.cbCategoria.TabIndex = 3;
             // 
+            // pbxAgregarArticulo
+            // 
+            this.pbxAgregarArticulo.Location = new System.Drawing.Point(348, 173);
+            this.pbxAgregarArticulo.Name = "pbxAgregarArticulo";
+            this.pbxAgregarArticulo.Size = new System.Drawing.Size(212, 194);
+            this.pbxAgregarArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxAgregarArticulo.TabIndex = 17;
+            this.pbxAgregarArticulo.TabStop = false;
+            // 
+            // btnAgregarImagen
+            // 
+            this.btnAgregarImagen.Location = new System.Drawing.Point(294, 259);
+            this.btnAgregarImagen.Name = "btnAgregarImagen";
+            this.btnAgregarImagen.Size = new System.Drawing.Size(34, 23);
+            this.btnAgregarImagen.TabIndex = 18;
+            this.btnAgregarImagen.Text = "+";
+            this.btnAgregarImagen.UseVisualStyleBackColor = true;
+            this.btnAgregarImagen.Click += new System.EventHandler(this.btnAgregarImagen_Click);
+            // 
             // fmAgregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(347, 521);
+            this.ClientSize = new System.Drawing.Size(584, 521);
+            this.Controls.Add(this.btnAgregarImagen);
+            this.Controls.Add(this.pbxAgregarArticulo);
             this.Controls.Add(this.cbCategoria);
             this.Controls.Add(this.cbMarca);
             this.Controls.Add(this.label8);
@@ -223,6 +247,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Articulo";
             this.Load += new System.EventHandler(this.fmAgregar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxAgregarArticulo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,5 +272,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cbMarca;
         private System.Windows.Forms.ComboBox cbCategoria;
+        private System.Windows.Forms.PictureBox pbxAgregarArticulo;
+        private System.Windows.Forms.Button btnAgregarImagen;
     }
 }
