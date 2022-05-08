@@ -37,7 +37,7 @@ namespace negocio
                     aux.Categoria.Descripcion = (string)datos.Reader["Categoria"];
 
                     aux.ImagenURL = (string)datos.Reader["ImagenUrl"];
-                    aux.Precio = (decimal)datos.Reader["Precio"];
+                    aux.Precio = Math.Round((decimal)datos.Reader["Precio"], 2);
 
                     lista.Add(aux);
                 }
