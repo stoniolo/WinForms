@@ -86,28 +86,5 @@ namespace WindowsFormsTP
                 MessageBox.Show(ex.ToString());
             }
         }
-
-        private void bEliminarArticulo_Click(object sender, EventArgs e)
-        {
-
-            ArticuloNegocio negocio = new ArticuloNegocio();
-
-            try
-            {
-                DialogResult rta = MessageBox.Show("Eliminar: " + articulo.Nombre + "?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                if(rta == DialogResult.Yes)
-                {
-                    negocio.eliminar(articulo.Id);
-                    MessageBox.Show("eliminado");
-                    Close();
-                }
-                
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.ToString());
-            }
-        }
     }
 }

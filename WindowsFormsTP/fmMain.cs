@@ -212,5 +212,27 @@ namespace WindowsFormsTP
             fmDetalles.ShowDialog();
             cargar();
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            Articulo selected = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            try
+            {
+                DialogResult rta = MessageBox.Show("Eliminar: " + selected.Nombre + "?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (rta == DialogResult.Yes)
+                {
+                    negocio.eliminar(selected.Id);
+                    MessageBox.Show(selected.Nombre + " eliminado.");
+                    cargar();
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+        }
     }
 }

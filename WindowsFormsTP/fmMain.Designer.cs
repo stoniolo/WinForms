@@ -45,6 +45,7 @@
             this.menuStrip3 = new System.Windows.Forms.MenuStrip();
             this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bDetalle = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbArticulo)).BeginInit();
             this.menuStrip3.SuspendLayout();
@@ -166,7 +167,7 @@
             this.bLimpiarFiltros.Name = "bLimpiarFiltros";
             this.bLimpiarFiltros.Size = new System.Drawing.Size(118, 23);
             this.bLimpiarFiltros.TabIndex = 17;
-            this.bLimpiarFiltros.Text = "Limpiar Filtros";
+            this.bLimpiarFiltros.Text = "Limpiar filtros";
             this.bLimpiarFiltros.UseVisualStyleBackColor = true;
             this.bLimpiarFiltros.Click += new System.EventHandler(this.bLimpiarFiltros_Click);
             // 
@@ -186,7 +187,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(163, 51);
             this.button1.TabIndex = 19;
-            this.button1.Text = "Modificar Articulo";
+            this.button1.Text = "Modificar artículo";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -217,11 +218,22 @@
             this.bDetalle.UseVisualStyleBackColor = true;
             this.bDetalle.Click += new System.EventHandler(this.bDetalle_Click);
             // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(818, 433);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(163, 51);
+            this.btnEliminar.TabIndex = 23;
+            this.btnEliminar.Text = "Eliminar artículo";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(994, 561);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.bDetalle);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -273,6 +285,7 @@
         private System.Windows.Forms.MenuStrip menuStrip3;
         private System.Windows.Forms.ToolStripMenuItem agregarToolStripMenuItem;
         private System.Windows.Forms.Button bDetalle;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }
 

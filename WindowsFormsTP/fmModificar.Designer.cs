@@ -44,7 +44,6 @@
             this.bCerrar = new System.Windows.Forms.Button();
             this.bGuardarCambios = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.bEliminarArticulo = new System.Windows.Forms.Button();
             this.cbMarca = new System.Windows.Forms.ComboBox();
             this.cbCategoria = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
@@ -160,9 +159,9 @@
             // 
             // bCerrar
             // 
-            this.bCerrar.Location = new System.Drawing.Point(177, 471);
+            this.bCerrar.Location = new System.Drawing.Point(49, 471);
             this.bCerrar.Name = "bCerrar";
-            this.bCerrar.Size = new System.Drawing.Size(102, 35);
+            this.bCerrar.Size = new System.Drawing.Size(230, 35);
             this.bCerrar.TabIndex = 9;
             this.bCerrar.Text = "Cerrar";
             this.bCerrar.UseVisualStyleBackColor = true;
@@ -187,16 +186,6 @@
             this.label9.Size = new System.Drawing.Size(134, 17);
             this.label9.TabIndex = 34;
             this.label9.Text = "Modificar Articulo";
-            // 
-            // bEliminarArticulo
-            // 
-            this.bEliminarArticulo.Location = new System.Drawing.Point(49, 471);
-            this.bEliminarArticulo.Name = "bEliminarArticulo";
-            this.bEliminarArticulo.Size = new System.Drawing.Size(102, 35);
-            this.bEliminarArticulo.TabIndex = 8;
-            this.bEliminarArticulo.Text = "Eliminar Articulo";
-            this.bEliminarArticulo.UseVisualStyleBackColor = true;
-            this.bEliminarArticulo.Click += new System.EventHandler(this.bEliminarArticulo_Click);
             // 
             // cbMarca
             // 
@@ -223,7 +212,6 @@
             this.ClientSize = new System.Drawing.Size(347, 518);
             this.Controls.Add(this.cbCategoria);
             this.Controls.Add(this.cbMarca);
-            this.Controls.Add(this.bEliminarArticulo);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -268,7 +256,6 @@
         private System.Windows.Forms.Button bCerrar;
         private System.Windows.Forms.Button bGuardarCambios;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button bEliminarArticulo;
         private System.Windows.Forms.ComboBox cbMarca;
         private System.Windows.Forms.ComboBox cbCategoria;
     }
